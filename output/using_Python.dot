@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="OpSys_Linux-based <= 0.5\ngini = 0.486\nsamples = 68342\nvalue = [39862, 28480]"] ;
+1 [label="MainBranch_I am a developer by profession <= 0.5\ngini = 0.46\nsamples = 51060\nvalue = [32766, 18294]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="EduOther_Participated in online coding competitions (e.g. HackerRank, CodeChef, TopCoder) <= 0.5\ngini = 0.5\nsamples = 12020\nvalue = [6044, 5976]"] ;
+1 -> 2 ;
+3 [label="gini = 0.497\nsamples = 9631\nvalue = [5210, 4421]"] ;
+2 -> 3 ;
+4 [label="gini = 0.454\nsamples = 2389\nvalue = [834, 1555]"] ;
+2 -> 4 ;
+5 [label="Containers_I do not use containers <= 0.5\ngini = 0.432\nsamples = 39040\nvalue = [26722, 12318]"] ;
+1 -> 5 ;
+6 [label="gini = 0.468\nsamples = 21703\nvalue = [13579, 8124]"] ;
+5 -> 6 ;
+7 [label="gini = 0.367\nsamples = 17337\nvalue = [13143, 4194]"] ;
+5 -> 7 ;
+8 [label="MainBranch_I am a developer by profession <= 0.5\ngini = 0.484\nsamples = 17282\nvalue = [7096, 10186]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="EduOther_Taught yourself a new language, framework, or tool without taking a formal course <= 0.5\ngini = 0.417\nsamples = 4553\nvalue = [1349, 3204]"] ;
+8 -> 9 ;
+10 [label="gini = 0.49\nsamples = 668\nvalue = [287, 381]"] ;
+9 -> 10 ;
+11 [label="gini = 0.397\nsamples = 3885\nvalue = [1062, 2823]"] ;
+9 -> 11 ;
+12 [label="Country_United States <= 0.5\ngini = 0.495\nsamples = 12729\nvalue = [5747, 6982]"] ;
+8 -> 12 ;
+13 [label="gini = 0.499\nsamples = 10275\nvalue = [4961, 5314]"] ;
+12 -> 13 ;
+14 [label="gini = 0.435\nsamples = 2454\nvalue = [786, 1668]"] ;
+12 -> 14 ;
+}

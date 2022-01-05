@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="OpSys_Windows <= 0.5\ngini = 0.495\nsamples = 68342\nvalue = [30840, 37502]"] ;
+1 [label="Containers_I do not use containers <= 0.5\ngini = 0.5\nsamples = 36374\nvalue = [18685, 17689]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="CurrencyDesc_United States dollar <= 0.5\ngini = 0.499\nsamples = 24032\nvalue = [11465, 12567]"] ;
+1 -> 2 ;
+3 [label="gini = 0.5\nsamples = 17720\nvalue = [8757, 8963]"] ;
+2 -> 3 ;
+4 [label="gini = 0.49\nsamples = 6312\nvalue = [2708, 3604]"] ;
+2 -> 4 ;
+5 [label="MainBranch_I code primarily as a hobby <= 0.5\ngini = 0.486\nsamples = 12342\nvalue = [7220, 5122]"] ;
+1 -> 5 ;
+6 [label="gini = 0.488\nsamples = 11687\nvalue = [6743, 4944]"] ;
+5 -> 6 ;
+7 [label="gini = 0.396\nsamples = 655\nvalue = [477, 178]"] ;
+5 -> 7 ;
+8 [label="MainBranch_I am a developer by profession <= 0.5\ngini = 0.471\nsamples = 31968\nvalue = [12155, 19813]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Age <= 19.95\ngini = 0.5\nsamples = 8877\nvalue = [4380, 4497]"] ;
+8 -> 9 ;
+10 [label="gini = 0.461\nsamples = 2165\nvalue = [1383, 782]"] ;
+9 -> 10 ;
+11 [label="gini = 0.494\nsamples = 6712\nvalue = [2997, 3715]"] ;
+9 -> 11 ;
+12 [label="EduOther_Completed an industry certification program (e.g. MCPD) <= 0.5\ngini = 0.447\nsamples = 23091\nvalue = [7775, 15316]"] ;
+8 -> 12 ;
+13 [label="gini = 0.459\nsamples = 18817\nvalue = [6699, 12118]"] ;
+12 -> 13 ;
+14 [label="gini = 0.377\nsamples = 4274\nvalue = [1076, 3198]"] ;
+12 -> 14 ;
+}

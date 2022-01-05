@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="MainBranch_I am a developer by profession <= 0.5\ngini = 0.433\nsamples = 68342\nvalue = [21678, 46664]"] ;
+1 [label="EdLevel_Other doctoral degree (Ph.D, Ed.D., etc.) <= 0.5\ngini = 0.493\nsamples = 16573\nvalue = [7307, 9266]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="UndergradMajor_Web development or web design <= 0.5\ngini = 0.49\nsamples = 15866\nvalue = [6824, 9042]"] ;
+1 -> 2 ;
+3 [label="gini = 0.493\nsamples = 15362\nvalue = [6741, 8621]"] ;
+2 -> 3 ;
+4 [label="gini = 0.275\nsamples = 504\nvalue = [83, 421]"] ;
+2 -> 4 ;
+5 [label="Employment_Employed full-time <= 0.5\ngini = 0.433\nsamples = 707\nvalue = [483, 224]"] ;
+1 -> 5 ;
+6 [label="gini = 0.499\nsamples = 122\nvalue = [64, 58]"] ;
+5 -> 6 ;
+7 [label="gini = 0.406\nsamples = 585\nvalue = [419, 166]"] ;
+5 -> 7 ;
+8 [label="EdLevel_Masterâs degree (MA, MS, M.Eng., MBA, etc.) <= 0.5\ngini = 0.401\nsamples = 51769\nvalue = [14371, 37398]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="EdLevel_Other doctoral degree (Ph.D, Ed.D., etc.) <= 0.5\ngini = 0.376\nsamples = 39326\nvalue = [9889, 29437]"] ;
+8 -> 9 ;
+10 [label="gini = 0.368\nsamples = 38178\nvalue = [9282, 28896]"] ;
+9 -> 10 ;
+11 [label="gini = 0.498\nsamples = 1148\nvalue = [607, 541]"] ;
+9 -> 11 ;
+12 [label="Containers_I do not use containers <= 0.5\ngini = 0.461\nsamples = 12443\nvalue = [4482, 7961]"] ;
+8 -> 12 ;
+13 [label="gini = 0.441\nsamples = 7749\nvalue = [2543, 5206]"] ;
+12 -> 13 ;
+14 [label="gini = 0.485\nsamples = 4694\nvalue = [1939, 2755]"] ;
+12 -> 14 ;
+}
